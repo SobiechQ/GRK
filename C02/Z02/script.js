@@ -50,17 +50,13 @@ function setup() {
     imgS.updatePixels();
     imgH.updatePixels();
 
-    // imgBlend.blend(imgH,0,0,256,256,0,0,256,256,ADD);
-    // imgBlend.blend(imgS,0,0,256,256,0,0,256,256,ADD);
-    // imgBlend.blend(imgV,0,0,256,256,0,0,256,256,ADD);
 }
 
 function draw() {
-    // image(imgH, 0,0);
     image(imgS, 256, 0);
     image(imgV, 0, 0);
     image(imgH, 0, 256);
-    // image(imgBlend, 256,256);
+    image(img, 255,255)
     updatePixels();
 
 }

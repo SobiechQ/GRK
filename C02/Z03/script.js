@@ -11,7 +11,7 @@ function setup() {
     img.filter(GRAY);
     img.loadPixels();
 
-    let histogram = new Array(256).fill(0);
+    const histogram = new Array(256).fill(0);
 
     for (let i = 0; i < img.pixels.length; i += 4)
         histogram[img.pixels[i]]++;
